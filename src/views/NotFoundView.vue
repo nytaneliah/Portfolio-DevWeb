@@ -42,15 +42,14 @@ import { RouterLink } from 'vue-router'
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  min-height: 80vh;
+  min-height: 100vh;
 }
 .returnLink {
   display: block;
   font-size: 2em;
-    color: var(--color-link);
-  
+  color: var(--color-link);
 }
 .container * {
-  margin: 30px 0;
+  margin: 30px auto;
 }
 </style>
