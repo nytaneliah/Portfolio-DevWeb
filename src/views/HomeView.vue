@@ -7,11 +7,11 @@
         <h1>Nytaneliah Ranaivoson</h1>
 
         <h2>Développeur Web</h2>
-        <p>
+        <!-- <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vitae repellat ex, iure
           placeat accusamus est obcaecati totam fugit nihil officiis nulla laborum nam, error
           necessitatibus, excepturi illum ut doloremque?
-        </p>
+        </p> -->
       </section>
       <section class="creations"></section>
       <section class="contact"></section>
