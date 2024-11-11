@@ -1,10 +1,11 @@
 <template>
   <header>
     <div class="container">
-      <div class="logo">
-        <img src="../assets/logo-nyta.svg" alt="logo de NYTA, acronyme de Now You Take Action" />
-      </div>
-
+      <RouterLink to="/">
+        <div class="logo">
+          <img src="../assets/logo-nyta.svg" alt="logo de NYTA, acronyme de Now You Take Action" />
+        </div>
+      </RouterLink>
       <!-- Navigation menu with anchor links -->
       <nav class="menu">
         <ul class="menu__list">
@@ -25,9 +26,11 @@ import DarkModeToogle from './DarkModeToogle.vue'
 
 <style scoped>
 .container {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   height: 60px;
+
 }
 
 .logo img {
@@ -39,8 +42,11 @@ import DarkModeToogle from './DarkModeToogle.vue'
   transition: all 0.2s ease-in-out;
 }
 
-.switch-dark-mode {
+.switch-dark-mode:hover {
   cursor: pointer;
+  box-shadow: 0px 2px 2px 0px var(--color-border);
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
 }
 .menu__list {
   list-style: none;
@@ -66,6 +72,7 @@ import DarkModeToogle from './DarkModeToogle.vue'
   position: relative;
   bottom: 1px;
   transition: all 0.2s ease-in-out;
+  color: var(--color-herotitle-text);
 }
 
 .dot {
@@ -108,7 +115,6 @@ import DarkModeToogle from './DarkModeToogle.vue'
   opacity: 1;
 }
 
-@media (min-width: 640px){
-
+@media (min-width: 640px) {
 }
 </style>

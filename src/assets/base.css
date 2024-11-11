@@ -10,24 +10,26 @@
 
   --color-contrast-1: #5271ff;
   --color-contrast-2: #57de43;
-  --color-contrast-3: #a71bc6;
+  --color-contrast-3: #002bed;
 }
+
+/* semantic color variables for this project */
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--color-base-2-hard);
     --color-body-text: var(--color-base-1-mute);
-    --color-title-text: var(--color-contrast-3);
+    --color-title-text: var(--color-contrast-1);
+    --color-herotitle-text: var(--color-contrast-3);
     --color-border: var(--color-contrast-2);
     --color-link: var(--color-base-1-soft);
-    transition: all 2s ease-in-out;
   }
 }
-/* semantic color variables for this project */
 :root {
   --color-background: var(--color-base-1);
   --color-body-text: var(--color-base-2-soft);
   --color-title-text: var(--color-contrast-1);
+  --color-herotitle-text: var(--color-contrast-3);
   --color-border: var(--color-contrast-2);
   --color-link: var(--color-contrast-1);
 }
@@ -35,7 +37,8 @@
 .dark {
   --color-background: var(--color-base-2-hard);
   --color-body-text: var(--color-base-1-mute);
-  --color-title-text: var(--color-contrast-3);
+  --color-title-text: var(--color-contrast-1);
+  --color-herotitle-text: var(--color-contrast-3);
   --color-border: var(--color-contrast-2);
   --color-link: var(--color-base-1-soft);
 }
