@@ -4,8 +4,9 @@
   <main>
     <div class="container">
       <section class="presentation">
-        <h1>Hello world</h1>
+        <h1>Nytaneliah Ranaivoson</h1>
 
+        <h2>Développeur Web</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vitae repellat ex, iure
           placeat accusamus est obcaecati totam fugit nihil officiis nulla laborum nam, error
@@ -20,13 +21,13 @@
 
 <style scoped>
 .container {
+
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* width: 100vw; */
-  height: 100vh;
-}
-div {
   text-align: center;
+  min-height: 100vh;
+
 }
 </style>

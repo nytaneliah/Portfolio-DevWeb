@@ -27,10 +27,10 @@
           </li>
         </ul>
       </nav>
-      <!-- Copyright information -->
 
+      <!-- Copyright information -->
       <small>
-        <div>&copy; 2024 NYTA.  droits réservés.</div>
+        <div>&copy; 2024 NYTA</div>
         <div>mise à jour le <time datetime="2024-11-12">12 novembre 2024</time>.</div>
       </small>
     </div>
@@ -39,6 +39,7 @@
 
 <style scoped>
 .container {
+  display: flex;
   flex-direction: column;
 }
 
@@ -63,6 +64,7 @@
 small {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 small * {
   font-size: 0.8rem;

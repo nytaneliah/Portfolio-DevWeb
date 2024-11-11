@@ -220,8 +220,3 @@ export default {
   },
 }
 </script>
-<style scoped>
-.switch-dark-mode {
-  width: 32px;
-}
-</style>
