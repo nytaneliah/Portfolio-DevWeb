@@ -1,4 +1,16 @@
-<script></script>
+<script setup>
+import HeaderItem from './components/HeaderItem.vue'
+import FooterItem from './components/FooterItem.vue'
+import HomeView from './views/HomeView.vue'
+
+</script>
+
 <template>
-  <h1>Hello world</h1>
+  <HeaderItem />
+
+  <HomeView />
+
+  <FooterItem />
 </template>
+
+
