@@ -6,8 +6,11 @@
 
 <script setup>
 import { onMounted, ref, onBeforeUnmount } from 'vue'
+import { useRouter } from 'vue-router'
 
 const appButton = ref(null)
+
+const router = useRouter()
 
 // Fonction pour faire défiler jusqu'en haut
 const scrollToTop = () => {
@@ -15,6 +18,9 @@ const scrollToTop = () => {
     top: 0,
     behavior: 'smooth',
   })
+  setTimeout(() => {
+    router.push('/')
+  }, 1000)
 }
 
 // Fonction pour afficher le bouton quand on défile vers le bas
@@ -46,6 +52,8 @@ onBeforeUnmount(() => {
   display: none; /* Caché par défaut */
   background: none;
   border: none;
+  z-index: 1000;
+
   /* Autres styles comme la couleur, la taille, etc. */
 }
 .app-button .app-button__img {
@@ -54,6 +62,7 @@ onBeforeUnmount(() => {
 .app-button:hover {
   bottom: 25px;
   transition: all 0.2s ease-in;
+  cursor: pointer;
 }
 .app-button:hover .app-button__img {
   content: url('../assets/top-rocket-2.svg');
@@ -63,6 +72,4 @@ onBeforeUnmount(() => {
 .app-button.showButton {
   display: block; /* Montrer le bouton lorsque la classe est ajoutée */
 }
-
-
 </style>

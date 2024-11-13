@@ -3,6 +3,7 @@
     <svg
       class="switch-dark-mode_svg--dark"
       v-if="isDarkMode"
+      alt="Désactiver le mode sombre"
       xmlns="http://www.w3.org/2000/svg"
       width="32"
       height="32"
@@ -85,6 +86,7 @@
     <svg
       class="switch-dark-mode_svg--light"
       v-else
+      alt="Activer le mode sombre"
       xmlns="http://www.w3.org/2000/svg"
       width="32"
       height="32"

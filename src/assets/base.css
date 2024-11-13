@@ -3,14 +3,18 @@
   --color-base-1: #ffffff;
   --color-base-1-soft: #f8f8f8;
   --color-base-1-mute: #f2f2f2;
+  --color-base-1-fade: #f2f2f2f2;
 
   --color-base-2: #030622;
   --color-base-2-hard: #020313;
   --color-base-2-soft: #050a38;
+  --color-base-2-fade: #030622f2;
 
   --color-contrast-1: #5271ff;
   --color-contrast-2: #57de43;
   --color-contrast-3: #002bed;
+  --color-soft-opacity-dark: rgba(0, 0, 0, 0.1);
+  --color-soft-opacity-light: rgba(255, 255, 255, 0.1);
 }
 
 /* semantic color variables for this project */
@@ -20,9 +24,12 @@
     --color-background: var(--color-base-2-hard);
     --color-body-text: var(--color-base-1-mute);
     --color-title-text: var(--color-contrast-1);
-    --color-herotitle-text: var(--color-contrast-3);
+    --color-herotitle-text: var(--color-base-1);
     --color-border: var(--color-contrast-2);
     --color-link: var(--color-base-1-soft);
+    --color-shadow: var(--color-soft-opacity-light);
+    --color-box-background: var(--color-base-2-fade);
+    --colox-box-border: var(--color-base-2-soft);
   }
 }
 :root {
@@ -32,13 +39,19 @@
   --color-herotitle-text: var(--color-contrast-3);
   --color-border: var(--color-contrast-2);
   --color-link: var(--color-contrast-1);
+  --color-shadow: var(--color-soft-opacity-dark);
+  --color-box-background: var(--color-base-1-fade);
+  --colox-box-border: var(--color-base-1-soft);
 }
 
 .dark {
   --color-background: var(--color-base-2-hard);
   --color-body-text: var(--color-base-1-mute);
   --color-title-text: var(--color-contrast-1);
-  --color-herotitle-text: var(--color-contrast-3);
+  --color-herotitle-text: var(--color-base-1);
   --color-border: var(--color-contrast-2);
   --color-link: var(--color-base-1-soft);
+  --color-shadow: var(--color-soft-opacity-light);
+  --color-box-background: var(--color-base-2-fade);
+  --colox-box-border: var(--color-base-2-soft);
 }
