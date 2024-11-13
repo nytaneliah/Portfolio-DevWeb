@@ -200,23 +200,28 @@ export default {
   setup() {
     const isDarkMode = ref(false)
 
+    // Toggle dark mode by updating the state and storing it in localStorage
     const toggleDarkMode = () => {
       isDarkMode.value = !isDarkMode.value
       if (isDarkMode.value) {
+        // Apply dark class to the document root when dark mode is enabled
         document.documentElement.classList.add('dark')
       } else {
+        // Remove dark class to disable dark mode
         document.documentElement.classList.remove('dark')
-      }
+      } // Save dark mode preference in localStorage
       localStorage.setItem('darkMode', isDarkMode.value)
     }
 
     onMounted(() => {
       const savedMode = localStorage.getItem('darkMode')
       if (savedMode === 'true') {
+        // Enable dark mode if saved preference exists
         isDarkMode.value = true
         document.documentElement.classList.add('dark')
       }
     })
+    // Return reactive variables and functions to the template
 
     return { isDarkMode, toggleDarkMode }
   },
