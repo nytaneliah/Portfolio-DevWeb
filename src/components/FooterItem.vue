@@ -43,7 +43,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* width: calc(100vw - 30px); */
   margin-bottom: 15px;
 }
 
@@ -68,10 +67,9 @@
 small {
   display: flex;
   justify-content: space-between;
-  /* margin-bottom: 10px; */
   width: calc(100vw - 40px);
-}
-small * {
-  font-size: 0.7rem;
+  * {
+    font-size: 0.7rem;
+  }
 }
 </style>

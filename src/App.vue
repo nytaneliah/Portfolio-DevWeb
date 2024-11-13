@@ -8,9 +8,7 @@ import { RouterView } from 'vue-router'
 <template>
   <ToTheTopButton />
   <HeaderItem />
-
   <RouterView />
-
   <FooterItem />
 </template>
 
