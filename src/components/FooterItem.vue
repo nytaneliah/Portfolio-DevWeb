@@ -16,7 +16,11 @@
             </a>
           </li>
           <li class="social__item linkedin">
-            <a class="social__link" href="https://linkedin.com" target="_blank">
+            <a
+              class="social__link"
+              href="https://www.linkedin.com/in/nytan%C3%A9liah-ranaivoson/"
+              target="_blank"
+            >
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 20 20">
                 <path
                   fill="#0a66c2"

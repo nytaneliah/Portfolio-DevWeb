@@ -6,16 +6,33 @@
     </RouterLink>
 
     <nav class="menu">
-      <!-- Desktop menu list - hidden on mobile via CSS -->
       <ul v-show="!isScrolled || isMenuOpen" class="menu__list">
         <li class="menu__item">
-          <RouterLink to="#presentation" @click="toggleMenu">Présentation</RouterLink>
+          <RouterLink
+            to="/#presentation"
+            @click="toggleMenu"
+            :class="{ active: activeSection === 'presentation' }"
+          >
+            Présentation
+          </RouterLink>
         </li>
         <li class="menu__item">
-          <RouterLink to="#creations" @click="toggleMenu">Créations</RouterLink>
+          <RouterLink
+            to="/#creations"
+            @click="toggleMenu"
+            :class="{ active: activeSection === 'creations' }"
+          >
+            Créations
+          </RouterLink>
         </li>
         <li class="menu__item">
-          <RouterLink to="#contact" @click="toggleMenu">Contact</RouterLink>
+          <RouterLink
+            to="/#contact"
+            @click="toggleMenu"
+            :class="{ active: activeSection === 'contact' }"
+          >
+            Contact
+          </RouterLink>
         </li>
         <div class="menu__dot"></div>
       </ul>
@@ -70,9 +87,30 @@
     <!-- Mobile-only dropdown menu -->
     <div v-if="isMenuOpen" class="menu__dropdown">
       <ul>
-        <li><RouterLink to="#presentation" @click="toggleMenu">Présentation</RouterLink></li>
-        <li><RouterLink to="#creations" @click="toggleMenu">Créations</RouterLink></li>
-        <li><RouterLink to="#contact" @click="toggleMenu">Contact</RouterLink></li>
+        <li class="menu__drop-item">
+          <RouterLink
+            to="/#presentation"
+            @click="toggleMenu"
+            :class="{ active: activeSection === 'presentation' }"
+            >Présentation</RouterLink
+          >
+        </li>
+        <li class="menu__drop-item">
+          <RouterLink
+            to="/#creations"
+            @click="toggleMenu"
+            :class="{ active: activeSection === 'creations' }"
+            >Créations</RouterLink
+          >
+        </li>
+        <li class="menu__drop-item">
+          <RouterLink
+            to="/#contact"
+            @click="toggleMenu"
+            :class="{ active: activeSection === 'contact' }"
+            >Contact</RouterLink
+          >
+        </li>
       </ul>
     </div>
   </header>
@@ -91,6 +129,7 @@ window.addEventListener('resize', handleResize)
 // State management for scroll position and menu visibility
 const isScrolled = ref(false)
 const isMenuOpen = ref(false)
+const activeSection = ref('')
 
 const toggleMenu = () => {
   if (!isScrolled.value && isLargeScreen.value) {
@@ -109,12 +148,47 @@ const handleScroll = () => {
   }
 }
 
+//Detect the active section
+const updateActiveSection = () => {
+  const sections = [
+    { id: 'hero', route: '/' },
+    { id: 'presentation', route: '/#presentation' },
+    { id: 'creations', route: '/#creations' },
+    { id: 'contact', route: '/#contact' },
+  ]
+
+  let currentSection = 'hero'
+
+  for (const section of sections) {
+    const element = document.getElementById(section.id)
+    if (element) {
+      const rect = element.getBoundingClientRect()
+      if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+        currentSection = section.id
+        break
+      }
+    }
+  }
+
+  // Update the active section without reloading the page
+  if (window.location.pathname !== '/notFound') {
+    activeSection.value = currentSection
+    if (currentSection === 'hero') {
+      window.history.pushState(null, '', '/')
+    } else {
+      window.history.pushState(null, '', `/#${currentSection}`)
+    }
+  }
+}
+
 onMounted(() => {
+  window.addEventListener('scroll', updateActiveSection)
   window.addEventListener('scroll', handleScroll)
   window.addEventListener('resize', handleResize)
 })
 
 onUnmounted(() => {
+  window.removeEventListener('scroll', updateActiveSection)
   window.removeEventListener('scroll', handleScroll)
   window.removeEventListener('resize', handleResize)
 })
@@ -170,11 +244,14 @@ onUnmounted(() => {
 }
 
 .menu__item:hover {
-  bottom: 1px;
+  padding-bottom: 2px;
   transition: all 0.2s ease-in-out;
   color: var(--color-herotitle-text);
 }
 
+.menu__item .active {
+  color: var(--color-border);
+}
 .menu__dot {
   position: absolute;
   z-index: 99;
@@ -232,6 +309,16 @@ onUnmounted(() => {
   width: 100%;
   background-color: var(--color-background);
   box-shadow: 0px 4px 8px var(--color-shadow);
+}
+
+.menu__drop-item:hover {
+  transition: all 0.2s ease-in-out;
+  * {
+    color: var(--color-herotitle-text);
+  }
+}
+.menu__drop-item .active {
+  color: var(--color-border);
 }
 
 /* Mobile viewport adaptations */

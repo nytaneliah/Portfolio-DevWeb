@@ -20,9 +20,25 @@
       <h2>Présentation</h2>
 
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vitae repellat ex, iure
-        placeat accusamus est obcaecati totam fugit nihil officiis nulla laborum nam, error
-        necessitatibus, excepturi illum ut doloremque?
+        Qualité – Dans tous mes projets, je vise une rigueur professionnelle exemplaire. Lors de la
+        rédaction d’un cahier des charges pour un site e-commerce, j’ai travaillé chaque détail pour
+        répondre aux attentes des utilisateurs, assurant ainsi une base solide pour un développement
+        efficace et structuré.
+      </p>
+      <p>
+        Créativité – Le web est mon terrain d’expression. J’ai conçu mon CV et ce portfolio pour
+        refléter une identité unique, dynamique et authentique, montrant que l’originalité peut
+        aller de pair avec une navigation claire et intuitive.
+      </p>
+      <p>
+        Design – L’esthétique doit avant tout servir l’expérience utilisateur. En dynamisant un
+        espace de commentaires, j’ai travaillé à concevoir une interface soignée et ergonomique, où
+        chaque interaction devient fluide et engageante, pour une utilisation optimale et agréable.
+      </p>
+      <p>
+        Ces valeurs sont au cœur de ma démarche et de chacun des projets que je réalise. Découvrez
+        mes créations ci-dessous et explorez comment qualité, créativité et design se traduisent
+        dans mes réalisations.
       </p>
     </section>
     <section id="creations">
@@ -71,7 +87,7 @@ section {
   flex-shrink: 0;
   padding: 20px;
   background-color: var(--color-box-background);
-  border: solid 10px var(--colox-box-border);
+  border: 10px solid var(--color-box-border);
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -81,6 +97,8 @@ section {
 .avatar__container:hover {
   box-shadow: 0px 1px 10px 1px var(--color-border);
   transition: all 0.2s ease-in-out;
+  background-color: var(--color-box-background-a);
+  border: 10px solid var(--color-box-border-a);
 }
 
 .avatar__img {

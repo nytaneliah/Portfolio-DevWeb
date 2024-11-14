@@ -1,14 +1,20 @@
 /* color palette */
 :root {
   --color-base-1: #ffffff;
-  --color-base-1-soft: #f8f8f8;
-  --color-base-1-mute: #f2f2f2;
-  --color-base-1-fade: #f2f2f2f2;
+  --color-base-1-soft: #f3f3f3;
+  --color-base-1-mute: #ededed;
+  --color-base-1-fade: #f8f8f8ab;
+  --color-base-1-fade-a: #f8f8f8d6;
+  --color-base-1-fade-b: #f2f2f2c6;
+  --color-base-1-fade-c: #f2f2f2e8;
 
   --color-base-2: #030622;
   --color-base-2-hard: #020313;
   --color-base-2-soft: #050a38;
-  --color-base-2-fade: #030622f2;
+  --color-base-2-fade: #050a38ab;
+  --color-base-2-fade-a: #050a38d6;
+  --color-base-2-fade-b: #030622c6;
+  --color-base-2-fade-c: #030622e8;
 
   --color-contrast-1: #5271ff;
   --color-contrast-2: #57de43;
@@ -27,9 +33,12 @@
     --color-herotitle-text: var(--color-base-1);
     --color-border: var(--color-contrast-2);
     --color-link: var(--color-base-1-soft);
+    --color-link-active: var(--color-contrast-2);
     --color-shadow: var(--color-soft-opacity-light);
     --color-box-background: var(--color-base-2-fade);
-    --colox-box-border: var(--color-base-2-soft);
+    --color-box-background-a: var(--color-base-2-fade-a);
+    --colox-box-border: var(--color-base-2-fade-b);
+    --colox-box-border-a: var(--color-base-2-fade-c);
   }
 }
 :root {
@@ -39,9 +48,12 @@
   --color-herotitle-text: var(--color-contrast-3);
   --color-border: var(--color-contrast-2);
   --color-link: var(--color-contrast-1);
+  --color-link-active: var(--color-contrast-2);
   --color-shadow: var(--color-soft-opacity-dark);
   --color-box-background: var(--color-base-1-fade);
-  --colox-box-border: var(--color-base-1-soft);
+  --color-box-background-a: var(--color-base-1-fade-a);
+  --colox-box-border: var(--color-base-1-fade-b);
+  --colox-box-border-a: var(--color-base-1-fade-c);
 }
 
 .dark {
@@ -51,7 +63,10 @@
   --color-herotitle-text: var(--color-base-1);
   --color-border: var(--color-contrast-2);
   --color-link: var(--color-base-1-soft);
+  --color-link-active: var(--color-contrast-2);
   --color-shadow: var(--color-soft-opacity-light);
   --color-box-background: var(--color-base-2-fade);
-  --colox-box-border: var(--color-base-2-soft);
+  --color-box-background-a: var(--color-base-2-fade-a);
+  --colox-box-border: var(--color-base-2-fade-b);
+  --colox-box-border-a: var(--color-base-2-fade-c);
 }
