@@ -4,7 +4,8 @@ import NotFoundView from '../views/NotFoundView.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: HomeView },
-  { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFoundView },
+  { path: '/notFound', name: 'NotFound', component: NotFoundView },
+  { path: '/:pathMatch(.*)*', redirect: '/notFound' },
 ]
 
 const router = createRouter({
@@ -15,9 +16,9 @@ const router = createRouter({
       return {
         el: to.hash,
         behavior: 'smooth',
-      };
+      }
     }
-    return { top: 0 };
+    return { top: 0 }
   },
 })
 

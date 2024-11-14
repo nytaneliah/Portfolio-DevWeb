@@ -7,11 +7,8 @@
 
 <script setup>
 import { onMounted, ref, onBeforeUnmount } from 'vue'
-import { useRouter } from 'vue-router'
 
 const appButton = ref(null) // Reference to the button element
-
-const router = useRouter()
 
 // Function to smoothly scroll the page to the top
 const scrollToTop = () => {
@@ -19,10 +16,6 @@ const scrollToTop = () => {
     top: 0,
     behavior: 'smooth',
   })
-  // Redirect to home page after a short delay
-  setTimeout(() => {
-    router.push('/')
-  }, 1000)
 }
 
 // Function to show the button when the user scrolls down
