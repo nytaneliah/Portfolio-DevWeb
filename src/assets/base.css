@@ -11,10 +11,10 @@
   --color-base-2: #030622;
   --color-base-2-hard: #020313;
   --color-base-2-soft: #050a38;
-  --color-base-2-fade: #050a38ab;
-  --color-base-2-fade-a: #050a38d6;
-  --color-base-2-fade-b: #030622c6;
-  --color-base-2-fade-c: #030622e8;
+  --color-base-2-fade: #030622ab;
+  --color-base-2-fade-a: #030622d6;
+  --color-base-2-fade-b: #050a38c6;
+  --color-base-2-fade-c: #050a38e8;
 
   --color-contrast-1: #5271ff;
   --color-contrast-2: #57de43;
@@ -37,8 +37,8 @@
     --color-shadow: var(--color-soft-opacity-light);
     --color-box-background: var(--color-base-2-fade);
     --color-box-background-a: var(--color-base-2-fade-a);
-    --colox-box-border: var(--color-base-2-fade-b);
-    --colox-box-border-a: var(--color-base-2-fade-c);
+    --color-box-border: var(--color-base-2-fade-b);
+    --color-box-border-a: var(--color-base-2-fade-c);
   }
 }
 :root {
@@ -52,8 +52,8 @@
   --color-shadow: var(--color-soft-opacity-dark);
   --color-box-background: var(--color-base-1-fade);
   --color-box-background-a: var(--color-base-1-fade-a);
-  --colox-box-border: var(--color-base-1-fade-b);
-  --colox-box-border-a: var(--color-base-1-fade-c);
+  --color-box-border: var(--color-base-1-fade-b);
+  --color-box-border-a: var(--color-base-1-fade-c);
 }
 
 .dark {
@@ -67,6 +67,6 @@
   --color-shadow: var(--color-soft-opacity-light);
   --color-box-background: var(--color-base-2-fade);
   --color-box-background-a: var(--color-base-2-fade-a);
-  --colox-box-border: var(--color-base-2-fade-b);
-  --colox-box-border-a: var(--color-base-2-fade-c);
+  --color-box-border: var(--color-base-2-fade-b);
+  --color-box-border-a: var(--color-base-2-fade-c);
 }

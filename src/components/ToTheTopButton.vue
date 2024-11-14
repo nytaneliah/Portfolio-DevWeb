@@ -1,7 +1,7 @@
 <template>
   <!-- Button that scrolls the page to the top when clicked -->
   <button ref="appButton" class="app-button" @click="scrollToTop">
-    <img src="../assets/top-rocket-1.svg" alt="" class="app-button__img" />
+    <img src="../assets/img/top-rocket-1.svg" alt="" class="app-button__img" />
   </button>
 </template>
 
@@ -53,7 +53,7 @@ onBeforeUnmount(() => {
 }
 
 .app-button .app-button__img {
-  content: url('../assets/top-rocket-1.svg');
+  content: url('../assets/img/top-rocket-1.svg');
 }
 
 .app-button:hover {
@@ -63,7 +63,7 @@ onBeforeUnmount(() => {
 }
 
 .app-button:hover .app-button__img {
-  content: url('../assets/top-rocket-2.svg'); /* Change image on hover */
+  content: url('../assets/img/top-rocket-2.svg'); /* Change image on hover */
   transition: all 0.2s ease-in;
 }
 
