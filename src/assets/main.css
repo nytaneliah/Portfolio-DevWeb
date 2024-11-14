@@ -7,6 +7,7 @@
   text-decoration: none;
   padding-inline-start: 0;
   list-style: none;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
   max-width: 100%;
@@ -30,13 +31,17 @@ footer {
 }
 h1 {
   color: var(--color-herotitle-text);
-  font-size: 2rem;
   font-family: 'Lato', 'Montserrat', 'Open Sans', sans-serif;
 }
 h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
   color: var(--color-title-text);
   font-family: 'Montserrat Alternates', 'Open Sans', 'Lato', sans-serif;
-  font-size: 1.2rem;
+}
+h3 {
+  font-family: 'Lato', 'Montserrat', 'Open Sans', sans-serif;
+  font-size: x-large;
+  padding-bottom: 2vh;
 }
 .container {
   max-width: 100%;

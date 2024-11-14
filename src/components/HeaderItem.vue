@@ -2,7 +2,7 @@
   <!-- Main header that sticks to the top of the viewport - 'scrolled' class is dynamically added -->
   <header class="sticky-nav-bar container" :class="{ scrolled: isScrolled }">
     <RouterLink to="/" class="logo">
-      <img src="../assets/logo-nyta.svg" alt="logo de NYTA, acronyme de Now You Take Action" />
+      <img src="../assets/img/logo-nyta.svg" alt="logo de NYTA, acronyme de Now You Take Action" />
     </RouterLink>
 
     <nav class="menu">
@@ -22,7 +22,7 @@
             @click="toggleMenu"
             :class="{ active: activeSection === 'creations' }"
           >
-            Créations
+            Portfolio
           </RouterLink>
         </li>
         <li class="menu__item">
@@ -100,7 +100,7 @@
             to="/#creations"
             @click="toggleMenu"
             :class="{ active: activeSection === 'creations' }"
-            >Créations</RouterLink
+            >Portfolio</RouterLink
           >
         </li>
         <li class="menu__drop-item">
@@ -274,13 +274,13 @@ onUnmounted(() => {
 }
 
 .menu__list li:nth-child(2):hover ~ .menu__dot {
-  transform: translateX(200px);
+  transform: translateX(195px);
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 
 .menu__list li:nth-child(3):hover ~ .menu__dot {
-  transform: translateX(318px);
+  transform: translateX(310px);
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
