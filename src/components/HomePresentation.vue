@@ -75,48 +75,73 @@
 
 <style scoped>
 #presentation {
-  min-height: 90vh;
   max-width: 90vw;
-  display: flex;
   height: auto;
-  flex-flow: column wrap;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 10px 20px;
   gap: 5vh 10vw;
 }
-#presentation h2 {
-  width: 100%;
+
+/* Style pour les blocs de présentation */
+.presentation__block {
+  display: flex;
+  flex-direction: column; /* Affichage en colonne par défaut */
+  align-items: center;
+  max-width: 800px;
+  gap: 20px;
+  text-align: center;
 }
+
+.presentation__img {
+  max-width: 300px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.presentation__text {
+  max-width: 500px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+/* Configuration pour les écrans plus larges */
 @media (min-width: 768px) {
-  #presentation > div:nth-child(odd) > img {
+  #presentation {
+    flex-direction: column;
+  }
+
+  .presentation__block {
+    flex-direction: row; /* Affichage en ligne sur les écrans larges */
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  /* Alterne l'ordre des images pour les éléments impairs */
+  .presentation__block:nth-child(odd) .presentation__img {
     order: 1;
+  }
+
+  .presentation__img {
+    max-width: 300px;
+    width: 45%;
+  }
+
+  .presentation__text {
+    width: 55%;
   }
 }
 
 .link__image {
   max-height: 250px;
+  margin-top: 20px;
+  align-self: center;
 }
 
 h3 {
   text-align: center;
-}
-.presentation__block {
-  max-width: 800px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2vh 4vw;
-}
-.presentation__img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  max-width: 245.5px;
-}
-.presentation__text {
-  width: 60%;
-  text-align: justify;
 }
 </style>

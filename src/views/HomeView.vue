@@ -1,20 +1,18 @@
 <script setup>
 import HomeHero from '../components/HomeHero.vue'
 import HomePresentation from '../components/HomePresentation.vue'
+import HomeCreations from '../components/HomeCreations.vue'
+import HomeContact from '../components/HomeContact.vue'
 </script>
 
 <template>
   <main class="container">
     <HomeHero />
     <HomePresentation />
+    <HomeCreations />
+    <HomeContact />
 
-    <section id="creations">
-      <h2>Mes créations</h2>
-    </section>
-    <section id="contact">
-      <h2>Contactez-moi</h2>
-      <p>Donner vie à vos idées numériques</p>
-    </section>
+
   </main>
 </template>
 
@@ -26,6 +24,8 @@ main {
   justify-content: space-between;
   text-align: center;
   min-height: calc(100vh - 60px);
+  flex: 1;
+  width: 100%;
 }
 
 section {

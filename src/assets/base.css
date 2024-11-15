@@ -39,6 +39,7 @@
     --color-box-background-a: var(--color-base-2-fade-a);
     --color-box-border: var(--color-base-2-fade-b);
     --color-box-border-a: var(--color-base-2-fade-c);
+    --color-footer-background: var(--color-base-2);
   }
 }
 :root {
@@ -54,6 +55,7 @@
   --color-box-background-a: var(--color-base-1-fade-a);
   --color-box-border: var(--color-base-1-fade-b);
   --color-box-border-a: var(--color-base-1-fade-c);
+  --color-footer-background: var(--color-base-1-mute);
 }
 
 .dark {
@@ -69,4 +71,5 @@
   --color-box-background-a: var(--color-base-2-fade-a);
   --color-box-border: var(--color-base-2-fade-b);
   --color-box-border-a: var(--color-base-2-fade-c);
+  --color-footer-background: var(--color-base-2);
 }
