@@ -293,11 +293,13 @@ onUnmounted(() => {
 .menu-burger-icon {
   margin-right: 20px;
 }
+.menu-burger-icon:hover {
+  opacity: 0.7;
+}
 
 .menu__switch-dark-mode:hover {
   cursor: pointer;
-  box-shadow: 0px 2px 2px 0px var(--color-border);
-  border-radius: 50%;
+  opacity: 0.7;
   transition: all 0.2s ease-in-out;
 }
 

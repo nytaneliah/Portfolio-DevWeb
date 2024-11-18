@@ -87,7 +87,7 @@ const handleSubmit = () => {
 
 <style scoped>
 #contact {
-  /* padding-bottom: 60px; */
+  padding-bottom: 80px;
   height: 100vh;
 }
 form {
@@ -100,15 +100,10 @@ form {
   gap: 10px;
 }
 
-label {
-  margin: 10px 0 5px;
-}
-
 input,
 textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
   border: 1px solid #ccc;
 }
 

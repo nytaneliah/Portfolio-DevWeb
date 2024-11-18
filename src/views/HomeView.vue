@@ -33,12 +33,4 @@ section {
   width: 100%;
   padding-top: 60px;
 }
-
-#creations {
-  background-image: url('../assets/img/hero-bg-2.svg');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
 </style>

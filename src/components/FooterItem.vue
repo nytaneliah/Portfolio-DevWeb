@@ -46,8 +46,9 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: auto;
-  background-color: var(--color-footer-background);
   text-align: center;
+  background-color: var(--color-footer-background);
+  box-shadow: 0px -2px 15px 15px var(--color-footer-background);
 }
 
 .social__list {
@@ -65,7 +66,6 @@ footer {
 .social__link:hover {
   position: relative;
   bottom: 4px;
-  box-shadow: 2px 1px 2px 1px var(--color-border);
   transition: all 0.2s ease-in-out;
 }
 small {
