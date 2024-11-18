@@ -1,71 +1,74 @@
 <template>
   <section id="presentation">
-    <h2>Du concept à la réalité digitale</h2>
+    <h2>From Concept to Digital Reality</h2>
     <div class="presentation__block">
+      <!-- Animated image for Quality -->
       <img
         src="../assets/img/img-qualite.gif"
-        alt="image animée d'un ingénieur en costume bleu et cravate jaune, portant un casque de chantier jaune, il écrit sur une feuille, à droite il y a un tableau blanc avec des des schémas dessinés, un signe dollar, des engrenages, une ampoule, un graphique en flèche croissante"
+        alt="Animated image of an engineer in a blue suit and yellow tie, wearing a yellow construction helmet, writing on a sheet, with a whiteboard on the right showing diagrams, a dollar sign, gears, a light bulb, and an upward arrow graph"
         class="presentation__img"
       />
       <div class="presentation__text">
-        <h3>Qualité</h3>
+        <h3>Quality</h3>
         <p>
-          Dans tous mes projets, je vise une rigueur professionnelle exemplaire. Lors de la
-          rédaction d’un cahier des charges pour un site e-commerce, je travaille chaque détail pour
-          répondre aux attentes des utilisateurs, assurant ainsi une base solide pour un
-          développement efficace et structuré.
+          In all my projects, I aim for exemplary professional rigor. When drafting a specification
+          for an e-commerce site, I work on every detail to meet user expectations, thus ensuring a
+          solid foundation for efficient and structured development.
         </p>
       </div>
     </div>
     <div class="presentation__block">
+      <!-- Animated image for Creativity -->
       <img
         src="../assets/img/img-creativite.gif"
-        alt="image animée d'un robot arrondi en forme d'écran souriant devant une page de navigateur avec des éléments graphiques rectangle animés devant la page"
+        alt="Animated image of a rounded robot shaped like a smiling screen in front of a browser page with animated rectangle graphic elements in front of the page"
         class="presentation__img"
       />
       <div class="presentation__text">
-        <h3>Créativité</h3>
+        <h3>Creativity</h3>
         <p>
-          Le web est mon terrain d’expression. J’ai conçu mon CV et ce portfolio pour refléter une
-          identité unique, dynamique et authentique, montrant que l’originalité peut aller de pair
-          avec une navigation claire et intuitive.
+          The web is my playground. I designed my resume and this portfolio to reflect a unique,
+          dynamic, and authentic identity, showing that originality can go hand in hand with clear
+          and intuitive navigation.
         </p>
       </div>
     </div>
     <div class="presentation__block">
+      <!-- Animated image for Design -->
       <img
         src="../assets/img/img-design.gif"
-        alt="image animée d'une page web colorée où les éléments graphiques sont déplacés par un curseur de souris "
+        alt="Animated image of a colorful web page where graphic elements are moved by a mouse cursor"
         class="presentation__img"
       />
       <div class="presentation__text">
         <h3>Design</h3>
         <p>
-          L’esthétique doit avant tout servir l’expérience utilisateur. En dynamisant un espace de
-          commentaires, je travaille à concevoir une interface soignée et ergonomique, où chaque
-          interaction devient fluide et engageante, pour une utilisation optimale et agréable.
+          Aesthetics should primarily serve the user experience. By energizing a comment section, I
+          work on designing a neat and ergonomic interface where every interaction becomes smooth
+          and engaging, for optimal and pleasant use.
         </p>
       </div>
     </div>
     <div class="presentation__block">
+      <!-- Animated image for Sharing -->
       <img
         src="../assets/img/img-partage.gif"
-        alt="image animée d'un homme et une femme devant une grande fenêtre denavigateur, l'homme accroupi à gauche dessine un cercle sur la fenêtre avec son doigt, la femme debout à droite porte une barre de navigation qu'elle pose au haut de la page"
+        alt="Animated image of a man and woman in front of a large browser window, the man crouching on the left drawing a circle on the window with his finger, and the woman standing on the right holding a navigation bar that she is placing at the top of the page"
         class="presentation__img"
       />
       <div class="presentation__text">
         <p>
-          Ces valeurs sont au cœur de ma démarche et de chacun des projets que je réalise. Découvrez
-          mes créations ci-dessous et comment qualité, créativité et design se traduisent dans mes
-          réalisations.
+          These values are at the heart of my approach and every project I undertake. Discover my
+          creations below and see how quality, creativity, and design translate into my work.
         </p>
       </div>
     </div>
     <RouterLink to="#creations">
+      <!-- Animated down arrow for navigation -->
       <img
         class="link__image"
         src="../assets/img/img-cta-arrow.gif"
-        alt="flèches animées pointant vers le bas"
+        alt="Animated arrows pointing downwards"
       />
     </RouterLink>
   </section>
@@ -74,6 +77,7 @@
 <script setup></script>
 
 <style scoped>
+/* Main presentation section styles */
 #presentation {
   max-width: 90vw;
   height: auto;
@@ -85,10 +89,10 @@
   gap: 5vh 10vw;
 }
 
-/* Style pour les blocs de présentation */
+/* Style for presentation blocks */
 .presentation__block {
   display: flex;
-  flex-direction: column; /* Affichage en colonne par défaut */
+  flex-direction: column;
   align-items: center;
   max-width: 800px;
   gap: 20px;
@@ -107,20 +111,20 @@
   margin: 0 auto;
 }
 
-/* Configuration pour les écrans plus larges */
+/* Configuration for larger screens */
 @media (min-width: 768px) {
   #presentation {
     flex-direction: column;
   }
 
   .presentation__block {
-    flex-direction: row; /* Affichage en ligne sur les écrans larges */
+    flex-direction: row; /* Align blocks horizontally on larger screens */
     align-items: center;
     justify-content: space-between;
     gap: 30px;
   }
 
-  /* Alterne l'ordre des images pour les éléments impairs */
+  /* Alternate the order of images for odd elements */
   .presentation__block:nth-child(odd) .presentation__img {
     order: 1;
   }
