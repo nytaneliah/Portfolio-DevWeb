@@ -136,8 +136,8 @@
 }
 
 .link__image {
-  max-height: 250px;
-  margin-top: 20px;
+  max-height: 30vh;
+  margin-bottom: 50px;
   align-self: center;
 }
 
