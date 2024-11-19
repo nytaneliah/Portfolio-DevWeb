@@ -16,6 +16,8 @@
   </section>
 </template>
 <script setup></script>
+
+<script setup></script>
 <style>
 #hero {
   display: flex;
@@ -42,6 +44,7 @@
   align-items: center;
   transition: all 0.2s ease-in-out;
 }
+/* Style for small screens */
 @media (max-width: 570px) {
   .avatar__container {
     flex-wrap: wrap;

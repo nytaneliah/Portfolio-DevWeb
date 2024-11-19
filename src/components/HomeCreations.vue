@@ -90,10 +90,11 @@ const creations = ref([
 
 const selectedCreation = ref(null)
 
+// Opens the modal and sets the selected creation
 const openModal = (creation) => {
   selectedCreation.value = creation
 }
-
+// Closes the modal by resetting the selected creation
 const closeModal = () => {
   selectedCreation.value = null
 }
@@ -111,6 +112,9 @@ const closeModal = () => {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 60px 15px 15px 15px;
+  margin-top: -60px;
+  gap: 5vh 10vw;
 }
 
 .creations__gallery {
@@ -119,9 +123,8 @@ const closeModal = () => {
   align-items: center;
   flex-wrap: wrap;
   gap: 5vh 10vw;
-  padding: 60px 15px 15px 15px;
-  margin-top: -60px;
   max-width: 800px;
+  background-color: var(--color-background);
 }
 
 .creations__item {
@@ -139,6 +142,9 @@ const closeModal = () => {
   max-height: 50vh;
   width: 300px;
   max-width: 50vw;
+}
+.creation__img.creation__img:hover {
+  box-shadow: 2px 2px 2px 0 var(--color-border);
 }
 .creation__title {
   max-width: 300px;

@@ -5,15 +5,16 @@
       <!-- Animated image for Quality -->
       <img
         src="../assets/img/img-qualite.gif"
-        alt="Animated image of an engineer in a blue suit and yellow tie, wearing a yellow construction helmet, writing on a sheet, with a whiteboard on the right showing diagrams, a dollar sign, gears, a light bulb, and an upward arrow graph"
+        alt="Image animée d'un ingénieur en costume bleu et cravate jaune, portant un casque de chantier jaune, écrivant sur une feuille, avec un tableau blanc à droite montrant des schémas, un signe dollar, des engrenages, une ampoule et un graphique en flèche montante"
         class="presentation__img"
       />
       <div class="presentation__text">
         <h3>Quality</h3>
         <p>
-          In all my projects, I aim for exemplary professional rigor. When drafting a specification
-          for an e-commerce site, I work on every detail to meet user expectations, thus ensuring a
-          solid foundation for efficient and structured development.
+          Dans tous mes projets, je vise une rigueur professionnelle exemplaire. Lors de la
+          rédaction d’un cahier des charges pour un site e-commerce, je travaille chaque détail pour
+          répondre aux attentes des utilisateurs, assurant ainsi une base solide pour un
+          développement efficace et structuré.
         </p>
       </div>
     </div>
@@ -21,15 +22,15 @@
       <!-- Animated image for Creativity -->
       <img
         src="../assets/img/img-creativite.gif"
-        alt="Animated image of a rounded robot shaped like a smiling screen in front of a browser page with animated rectangle graphic elements in front of the page"
+        alt="Image animée d'un robot arrondi en forme d'écran souriant devant une page de navigateur avec des éléments graphiques rectangulaires animés devant la page"
         class="presentation__img"
       />
       <div class="presentation__text">
         <h3>Creativity</h3>
         <p>
-          The web is my playground. I designed my resume and this portfolio to reflect a unique,
-          dynamic, and authentic identity, showing that originality can go hand in hand with clear
-          and intuitive navigation.
+          Le web est mon terrain de jeu. J’ai conçu mon CV et ce portfolio pour refléter une
+          identité unique, dynamique et authentique, montrant que l’originalité peut aller de pair
+          avec une navigation claire et intuitive.
         </p>
       </div>
     </div>
@@ -37,15 +38,15 @@
       <!-- Animated image for Design -->
       <img
         src="../assets/img/img-design.gif"
-        alt="Animated image of a colorful web page where graphic elements are moved by a mouse cursor"
+        alt="Image animée d'une page web colorée où les éléments graphiques sont déplacés par un curseur de souris"
         class="presentation__img"
       />
       <div class="presentation__text">
         <h3>Design</h3>
         <p>
-          Aesthetics should primarily serve the user experience. By energizing a comment section, I
-          work on designing a neat and ergonomic interface where every interaction becomes smooth
-          and engaging, for optimal and pleasant use.
+          L’esthétique doit avant tout servir l’expérience utilisateur. En dynamisant un espace de
+          commentaires, je travaille à concevoir une interface soignée et ergonomique, où chaque
+          interaction devient fluide et engageante, pour une utilisation optimale et agréable.
         </p>
       </div>
     </div>
@@ -53,13 +54,14 @@
       <!-- Animated image for Sharing -->
       <img
         src="../assets/img/img-partage.gif"
-        alt="Animated image of a man and woman in front of a large browser window, the man crouching on the left drawing a circle on the window with his finger, and the woman standing on the right holding a navigation bar that she is placing at the top of the page"
+        alt="Image animée d'un homme et d'une femme devant une grande fenêtre de navigateur, l'homme accroupi à gauche dessinant un cercle sur la fenêtre avec son doigt, et la femme debout à droite tenant une barre de navigation qu'elle place en haut de la page"
         class="presentation__img"
       />
       <div class="presentation__text">
         <p>
-          These values are at the heart of my approach and every project I undertake. Discover my
-          creations below and see how quality, creativity, and design translate into my work.
+          Ces valeurs sont au cœur de ma démarche et de chacun des projets que je réalise. Découvrez
+          mes créations ci-dessous et comment qualité, créativité et design se traduisent dans mes
+          réalisations.
         </p>
       </div>
     </div>
@@ -68,7 +70,7 @@
       <img
         class="link__image"
         src="../assets/img/img-cta-arrow.gif"
-        alt="Animated arrows pointing downwards"
+        alt="Flèches animées pointant vers le bas"
       />
     </RouterLink>
   </section>

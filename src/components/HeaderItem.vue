@@ -59,7 +59,7 @@
           </g>
         </svg>
 
-        <!-- Hamburger menu icon to open menu when it is closed -->
+        <!-- Burger menu icon to open menu when it is closed -->
         <svg
           @click="toggleMenu"
           v-else

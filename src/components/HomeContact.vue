@@ -52,7 +52,7 @@ const validateEmail = () => {
   isEmailValid.value = emailRegex.test(form.value.user_email)
 }
 
-// Simulate sending the form (e.g., successful submission after 2 seconds)
+// Simulate sending the form (successful submission after 2 seconds)
 const sendForm = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
