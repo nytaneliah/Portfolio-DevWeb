@@ -19,7 +19,7 @@ Clonez ce dépôt sur votre machine locale :
 
 ```bash
 git clone https://github.com/nytaneliah/Portfolio-DevWeb
-cd votre-repo
+cd Portfolio-DevWeb
 ```
 
 ### 2. Initialiser le projet avec `create-vue`
@@ -110,7 +110,6 @@ Les contributions sont les bienvenues ! Si vous avez des suggestions ou des amé
 
 Ce projet est sous licence MIT. Consultez le fichier `LICENSE` pour plus d'informations.
 
-
 # Portfolio Vue.js ENGLISH
 
 An interactive and modern portfolio built with Vue 3 using the Composition API. This project showcases your work, highlights your skills, and allows visitors to contact you through a form.
@@ -131,8 +130,8 @@ Follow these steps to set up and run the project:
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/nytaneliah/Portfolio-DevWeb
+cd Portfolio-DevWeb
 ```
 
 ### 2. Initialize the Project with `create-vue`
