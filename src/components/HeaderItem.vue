@@ -34,7 +34,7 @@
             Contact
           </RouterLink>
         </li>
-        <div class="menu__dot"></div>
+        <li class="menu__dot"></li>
       </ul>
 
       <div class="menu__icons">
@@ -231,16 +231,15 @@ onUnmounted(() => {
 }
 
 .menu__item {
-  color: var(--color-link);
   padding: 0px 20px;
   transition: all 0.2s ease-in-out;
-
-  * {
-    text-decoration: none;
-    color: inherit;
-    font-weight: 500;
-    font-size: 1.1em;
-  }
+}
+.menu__item a {
+  text-decoration: none;
+  color: var(--color-link);
+  font-weight: 500;
+  font-size: 1.1em;
+  transition: all 0.2s ease-in-out;
 }
 
 .menu__item:hover {
@@ -313,11 +312,9 @@ onUnmounted(() => {
   box-shadow: 0px 4px 8px var(--color-shadow);
 }
 
-.menu__drop-item:hover {
+.menu__drop-item a:hover {
   transition: all 0.2s ease-in-out;
-  * {
-    color: var(--color-herotitle-text);
-  }
+  color: var(--color-herotitle-text);
 }
 .menu__drop-item .active {
   color: var(--color-border);
@@ -339,10 +336,10 @@ onUnmounted(() => {
     align-items: flex-start;
     justify-content: center;
     text-align: center;
-    * {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
+  }
+  .menu__dropdown a {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 

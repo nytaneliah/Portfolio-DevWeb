@@ -2,16 +2,12 @@
   <!-- Modal overlay that closes when clicked outside the content -->
   <div class="modal__overlay" @click.self="close">
     <div class="modal__content">
-      <!-- Close button for the modal -->
       <button @click="close" class="modal__close">X</button>
 
-      <!-- Title of the creation -->
       <h2>{{ creation.title }}</h2>
 
-      <!-- Technologies used in the creation -->
       <p><strong>Technologies :</strong> {{ creation.technologies.join(', ') }}</p>
 
-      <!-- Description of the creation -->
       <p>{{ creation.description }}</p>
 
       <!-- Link to view the creation -->
@@ -27,7 +23,6 @@
         />
       </div>
 
-      <!-- Date of creation -->
       <p><strong>Date de création :</strong> {{ creation.date }}</p>
 
       <!-- Link to view the creation (duplicate) -->
@@ -38,16 +33,12 @@
 
 
 <script setup>
-// Importing the necessary functions from Vue
 const { creation } = defineProps({
-  // Defining the prop 'creation' which is an object
   creation: Object,
 })
 
-// Defining the emits for the component
 const emit = defineEmits(['close'])
 
-// Function to emit the 'close' event
 const close = () => {
   emit('close')
 }
@@ -55,7 +46,6 @@ const close = () => {
 
 
 <style scoped>
-/* Styles for the modal overlay */
 .modal__overlay {
   position: fixed;
   top: 0;
@@ -69,7 +59,6 @@ const close = () => {
   z-index: 1000;
 }
 
-/* Styles for the modal content */
 .modal__content {
   background: var(--color-background);
   padding: 20px;
@@ -85,7 +74,6 @@ const close = () => {
   box-shadow: 0px 4px 8px 5px var(--color-shadow);
 }
 
-/* Styles for the close button */
 .modal__close {
   position: absolute;
   top: 10px;
@@ -97,7 +85,6 @@ const close = () => {
   color: var(--color-link);
 }
 
-/* Styles for the images container */
 .modal__images {
   display: flex;
   flex-wrap: wrap;
@@ -105,14 +92,12 @@ const close = () => {
   gap: 10px;
 }
 
-/* Styles for each image */
 .modal__img {
   max-width: 100%;
   height: auto;
   max-height: 80vh;
 }
 
-/* Styles for the link to view the creation */
 .modal__link {
   color: var(--color-link-active);
   font-weight: bold;

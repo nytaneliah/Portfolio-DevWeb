@@ -6,7 +6,6 @@ import { RouterLink } from 'vue-router'
   <main>
     <div class="container">
       <section>
-        <!-- SVG icon to visually indicate the 404 error -->
         <svg xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" viewBox="0 0 36 36">
           <circle
             cx="18"
@@ -28,7 +27,6 @@ import { RouterLink } from 'vue-router'
           <path fill="none" d="M0 0h36v36H0z"></path>
         </svg>
 
-        <!-- Title and description for the 404 error page -->
         <h1>Erreur 404</h1>
         <p>La page que vous recherchez n'a pas été trouvée ou n'existe pas.</p>
 

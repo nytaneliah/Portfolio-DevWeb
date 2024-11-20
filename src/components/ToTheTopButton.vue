@@ -39,7 +39,6 @@ onBeforeUnmount(() => {
 </script>
 
 <style>
-/* Base styles for the button appearance */
 .app-button {
   position: fixed;
   bottom: 20px;
@@ -48,8 +47,6 @@ onBeforeUnmount(() => {
   background: none;
   border: none;
   z-index: 1000;
-
-  /* Additional styles like color, size, etc. */
 }
 
 .app-button .app-button__img {
@@ -57,17 +54,18 @@ onBeforeUnmount(() => {
 }
 
 .app-button:hover {
-  bottom: 25px; /* Lift button on hover */
+  bottom: 25px;
   transition: all 0.2s ease-in;
   cursor: pointer;
 }
 
+/* Change image on hover */
 .app-button:hover .app-button__img {
-  content: url('../assets/img/top-rocket-2.svg'); /* Change image on hover */
+  content: url('../assets/img/top-rocket-2.svg');
   transition: all 0.2s ease-in;
 }
 
 .app-button.showButton {
-  display: block; /* Show the button when this class is added */
+  display: block;
 }
 </style>

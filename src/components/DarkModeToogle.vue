@@ -3,7 +3,6 @@
     <svg
       class="switch-dark-mode_svg--dark"
       v-if="isDarkMode"
-      alt="Désactiver le mode sombre"
       xmlns="http://www.w3.org/2000/svg"
       width="32"
       height="32"
@@ -86,7 +85,6 @@
     <svg
       class="switch-dark-mode_svg--light"
       v-else
-      alt="Activer le mode sombre"
       xmlns="http://www.w3.org/2000/svg"
       width="32"
       height="32"
@@ -199,7 +197,6 @@ import { ref, onMounted } from 'vue'
 // Reactive state to track dark mode
 const isDarkMode = ref(false)
 
-// Toggle dark mode and store preference in localStorage
 const toggleDarkMode = () => {
   isDarkMode.value = !isDarkMode.value
   if (isDarkMode.value) {

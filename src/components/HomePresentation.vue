@@ -2,7 +2,6 @@
   <section id="presentation">
     <h2>From Concept to Digital Reality</h2>
     <div class="presentation__block">
-      <!-- Animated image for Quality -->
       <img
         src="../assets/img/img-qualite.gif"
         alt="Image animée d'un ingénieur en costume bleu et cravate jaune, portant un casque de chantier jaune, écrivant sur une feuille, avec un tableau blanc à droite montrant des schémas, un signe dollar, des engrenages, une ampoule et un graphique en flèche montante"
@@ -19,7 +18,6 @@
       </div>
     </div>
     <div class="presentation__block">
-      <!-- Animated image for Creativity -->
       <img
         src="../assets/img/img-creativite.gif"
         alt="Image animée d'un robot arrondi en forme d'écran souriant devant une page de navigateur avec des éléments graphiques rectangulaires animés devant la page"
@@ -35,7 +33,6 @@
       </div>
     </div>
     <div class="presentation__block">
-      <!-- Animated image for Design -->
       <img
         src="../assets/img/img-design.gif"
         alt="Image animée d'une page web colorée où les éléments graphiques sont déplacés par un curseur de souris"
@@ -51,7 +48,6 @@
       </div>
     </div>
     <div class="presentation__block">
-      <!-- Animated image for Sharing -->
       <img
         src="../assets/img/img-partage.gif"
         alt="Image animée d'un homme et d'une femme devant une grande fenêtre de navigateur, l'homme accroupi à gauche dessinant un cercle sur la fenêtre avec son doigt, et la femme debout à droite tenant une barre de navigation qu'elle place en haut de la page"
@@ -66,7 +62,6 @@
       </div>
     </div>
     <RouterLink to="#creations">
-      <!-- Animated down arrow for navigation -->
       <img
         class="link__image"
         src="../assets/img/img-cta-arrow.gif"
@@ -79,7 +74,6 @@
 <script setup></script>
 
 <style scoped>
-/* Main presentation section styles */
 #presentation {
   max-width: 90vw;
   height: auto;
@@ -91,7 +85,6 @@
   gap: 5vh 10vw;
 }
 
-/* Style for presentation blocks */
 .presentation__block {
   display: flex;
   flex-direction: column;

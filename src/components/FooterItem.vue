@@ -1,6 +1,5 @@
 <template>
   <footer>
-    <!-- Social media links (or other important links) -->
     <nav class="social">
       <ul class="social__list">
         <li class="social__item github">
@@ -31,10 +30,9 @@
       </ul>
     </nav>
 
-    <!-- Copyright information -->
     <small>
-      <div>&copy; 2024 NYTA</div>
-      <div>mise à jour le <time datetime="2024-11-12">12 novembre 2024</time>.</div>
+      <span>&copy; 2024 NYTA</span>
+      <span>mise à jour le <time datetime="2024-11-12">12 novembre 2024</time>.</span>
     </small>
   </footer>
 </template>
@@ -72,9 +70,10 @@ small {
   display: flex;
   justify-content: space-between;
   width: calc(100vw - 40px);
-  * {
-    font-size: 0.7rem;
-  }
   margin-bottom: 15px;
+}
+span,
+time {
+  font-size: 0.7rem;
 }
 </style>

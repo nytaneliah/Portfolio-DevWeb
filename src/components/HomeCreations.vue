@@ -118,15 +118,18 @@ const closeModal = () => {
 }
 
 .creations__gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 5vh 10vw;
   max-width: 800px;
   background-color: var(--color-background);
 }
-
+/* Media query for screens below 768px */
+@media (max-width: 768px) {
+  .creations__gallery {
+    grid-template-columns: 1fr;
+  }
+}
 .creations__item {
   cursor: pointer;
   text-align: center;
