@@ -1,14 +1,14 @@
 <template>
   <section id="presentation">
-    <h2>From Concept to Digital Reality</h2>
+    <h2>Du concept à la réalité digitale</h2>
     <div class="presentation__block">
       <img
         src="../assets/img/img-qualite.gif"
-        alt="Image animée d'un ingénieur en costume bleu et cravate jaune, portant un casque de chantier jaune, écrivant sur une feuille, avec un tableau blanc à droite montrant des schémas, un signe dollar, des engrenages, une ampoule et un graphique en flèche montante"
+        alt="Image animée d'un ingénieur en costume bleu et cravate jaune, portant un casque de chantier jaune, il écrit sur une feuille, à droite il y a un tableau blanc avec des des schémas dessinés, un signe dollar, des engrenages, une ampoule, un graphique en flèche croissante"
         class="presentation__img"
       />
       <div class="presentation__text">
-        <h3>Quality</h3>
+        <h3>Qualité</h3>
         <p>
           Dans tous mes projets, je vise une rigueur professionnelle exemplaire. Lors de la
           rédaction d’un cahier des charges pour un site e-commerce, je travaille chaque détail pour
@@ -24,9 +24,9 @@
         class="presentation__img"
       />
       <div class="presentation__text">
-        <h3>Creativity</h3>
+        <h3>Créativité</h3>
         <p>
-          Le web est mon terrain de jeu. J’ai conçu mon CV et ce portfolio pour refléter une
+          Le web est mon terrain d’expression. J’ai conçu mon CV et ce portfolio pour refléter une
           identité unique, dynamique et authentique, montrant que l’originalité peut aller de pair
           avec une navigation claire et intuitive.
         </p>
@@ -35,7 +35,7 @@
     <div class="presentation__block">
       <img
         src="../assets/img/img-design.gif"
-        alt="Image animée d'une page web colorée où les éléments graphiques sont déplacés par un curseur de souris"
+        alt="Image animée d'un robot arrondi en forme d'écran souriant devant une page de navigateur avec des éléments graphiques rectangle animés devant la page"
         class="presentation__img"
       />
       <div class="presentation__text">
@@ -50,7 +50,7 @@
     <div class="presentation__block">
       <img
         src="../assets/img/img-partage.gif"
-        alt="Image animée d'un homme et d'une femme devant une grande fenêtre de navigateur, l'homme accroupi à gauche dessinant un cercle sur la fenêtre avec son doigt, et la femme debout à droite tenant une barre de navigation qu'elle place en haut de la page"
+        alt="Image animée d'un homme et une femme devant une grande fenêtre denavigateur, l'homme accroupi à gauche dessine un cercle sur la fenêtre avec son doigt, la femme debout à droite porte une barre de navigation qu'elle pose au haut de la page"
         class="presentation__img"
       />
       <div class="presentation__text">
