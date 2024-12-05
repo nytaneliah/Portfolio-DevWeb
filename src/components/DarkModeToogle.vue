@@ -213,9 +213,18 @@ const toggleDarkMode = () => {
 // On component mount, check localStorage for saved dark mode preference
 onMounted(() => {
   const savedMode = localStorage.getItem('darkMode')
-  if (savedMode === 'true') {
-    isDarkMode.value = true
+  if (savedMode !== null) {
+    isDarkMode.value = savedMode === 'true'
+  } else {
+    // Check system dark mode preference
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+    isDarkMode.value = prefersDark
+  }
+  // Apply the correct mode class
+  if (isDarkMode.value) {
     document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
   }
 })
 </script>
